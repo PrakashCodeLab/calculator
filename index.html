@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Digital calculator</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"> </head>
+
+<body class="body">
+	<header class="head__section">
+		<div class="head__warper">
+			<div class="heading">
+				<h1>Number cruncher</h1> </div>
+			<div class="toggle__sec ">
+				<div class="toggle__bar"> <i class="las la-sun"></i> <i class="las la-moon"></i>
+					<div class="toggle__ball"> </div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="container">
+		<div class="container__body">
+			<div class="container__content">
+				<h1>Digital calculator</h1>
+				<p class="para">Our simple calculator is the perfect tool for basic math calculations. Whether you need to add, subtract, multiply, or divide, our calculator can handle it all. Just enter your numbers and choose the operation you want to perform. It's that easy!</p>
+				<p id="result__display">
+					<p>
+			</div>
+			<div class="cal__body">
+				<div class="container__calculator">
+					<input type="text" class="calculator__display" id="display__button">
+					<button onclick="del()">del</button>
+					<button onclick="cl()">Ac</button>
+					<button class="div" onclick="display('/')">/</button>
+					<button class="mul" onclick="display('*')">*</button>
+					<button onclick="display(7)">7</button>
+					<button onclick="display(8)">8</button>
+					<button onclick="display(9)">9</button>
+					<button class="min" onclick="display('-')">-</button>
+					<button onclick="display(4)">4</button>
+					<button onclick="display(5)">5</button>
+					<button onclick="display(6)">6</button>
+					<button class="plus" onclick="display('+')">+</button>
+					<button onclick="display(1)">1</button>
+					<button onclick="display(2)">2</button>
+					<button onclick="display(3)">3</button>
+					<button class="zero" onclick="display(0)">0</button>
+					<button class="dot" onclick="display('.')">.</button>
+					<button class="equal" onclick="calculate()">=</button>
+				</div>
+			</div>
+			<div class="content">
+				<p>Thank you for using our simple calculator.</p>
+			</div>
+		</div>
+	</main>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
